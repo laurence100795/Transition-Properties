@@ -1,0 +1,68 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #bada55;
+    
+}
+.box:hover {
+    width: 150px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+/*extends box to 150px when hovered over but cut's back to original size instantly when moved off */
+
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: #4a4a4f;
+    transition-property: width;
+    transition-duration: 2s;
+    
+}
+.box2:hover {
+    width: 150px;
+}
+/*extends box to 150px when hovered over and reverts animation when shrinking*/
+
+.box3 {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    transition-property: width;
+    transition-duration: 4s;
+    
+}
+.box3:hover {
+    width: 150px;
+    background-color: #e84610;
+}
+/*extends box to 150px when hovered over and reverts animation when shrinking as well as changes from purple to red*/
+
+a {
+  color: #e84610;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 1s ease-in-out;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* this is a transition on a link which's original color is red and when hovered over changes to black in 1 second */
+
+.box4 {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    transition-property: width;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    
+}
+.box4:hover {
+    width: 150px;
+    background-color: #e84610;
+}
+/* with ease in out starts slow speeds up a little and slows down towards the end*/
+/* compare the colour identical blocks you'll notice a difference*/
